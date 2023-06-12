@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SOSHApp</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a><img src="images/logo.png"></a>
+            <div class="homepage" id="homePage">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" target="blank" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="main">
+            <h1>Welcome to SOSHApp: Slaughter's Online Sizzling House Application</h1>
+            <p>Where your cravings gets satisfied!</p>
+        </div>  
+    </div>
+<script>
+    var homePage = document.getElementById("homePage");
+    function showMenu(){
+        homePage.style.top = "0";
+    }
+    function hideMenu(){
+        homePage.style.top = "-1000px";
+    }
+</script> 
+    <div class="offers">
+        <h1>Offers</h1>
+        <p>Come and check what's on our weekly menu.</p>
+        <div class="row">
+            <div class="for_o">
+                <img src="images/unli_meal.jpg">
+                <h3>Unli Rice Meals</h3>
+                <button class="button">
+                    <a href="menu.html/#unli_rice_meal">Check Menu</a>
+                </button>
+            </div>
+            <div class="for_o">
+                <img src="images/barkada.jpg">
+                <h3>Barkada / Pulutan</h3>
+                <button class="button">
+                    <a href="http://localhost/website/menu.html#barkada_pulutan">Check Menu</a>
+                </button>
+            </div>
+            <div class="for_o">
+                <img src="images/milk_shake.jpg">
+                <h3>Drinks</h3>
+                <button class="button">
+                    <a href="http://localhost/appdev/menu.html#beverages">Check Menu</a>
+                </button>
+            </div>
+        </div>    
+    </div>
+    <div class="offers">
+        <h1>Best Sellers</h1>
+        <p>Try some of our best sellers.</p>
+        <div class="row">
+            <div class="for_a">
+                <img src="images/T-bone with egg.jpg">
+                <h3>T-bone with Egg</h3> 
+                <p>For only ₱169.00</p>
+            </div>
+            <div class="for_a">
+                <img src="images/Sizzling sisig.jpg">
+                <h3>Sizzling Sisig</h3> 
+                <p>For only ₱85.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="announcements">
+        <h1>Announcements</h1>
+        <p>You guys can look over our announcements for some exciting promos as well as important details.</p>
+        <div class="row">
+            <div class="for_a">
+                <img src="images/promo.jpg">
+                <h3>1st Anniversary Promo</h3> 
+                <p>On November 18, you guys can celebrate with us our 1st Year Anniversary! Save the date folks! </p>
+            </div>
+            <div class="for_a">
+                <img src="images/promo2.jpg">
+                <h3>Sold Out</h3> 
+                <p>All our meals and drinks are sold out for today. We'll be back tomorrow guys!</p>
+            </div>
+            <div class="for_a">
+                <img src="images/promo3.jpg">
+                <h3>Unli Gravy</h3> 
+                <p>Starting at April 8, we now have our Unli Rice, Unli Gravy, and Unli Soup for you!</p>
+            </div>
+        </div>
+    </div>
+    <div class="clickcontact">
+        <h1>We are now offering orders online!</h1>
+        <a href="http://localhost/website/contact.html#orders"class="forcontact">Order Now</a>
+    </div>
+    <div class="footer">
+        <div class="footer2">
+            <div class="nav-pane">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="agreement">
+                <p><a href="privacy.html">Privacy Policy</a><br>
+                    <a href="login.html">Sign In</a></p>
+            </div>
+            <p>Copyright &copy; 2023 Slaughter's Sizzling House<br>Zone 4 Brgy. Tabi, Boac, Marinduque<br>0968 524 6427<br>All rights reserved.</p>
+            <div class="icons">
+                <div>
+                    <a href="https://www.facebook.com/slaughterssizzlinghouse">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com/slaughterssizzlinghouse">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <a href="https://www.facebook.com/slaughterssizzlinghouse">
+                        <i class="fa fa-wikipedia-w"></i>
+                    </a>
+                    <a href="https://www.facebook.com/slaughterssizzlinghouse">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
