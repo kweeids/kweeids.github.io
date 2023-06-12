@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(104, 169, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_logIn{
+    background: white;
+    border-radius: 6px;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: blueviolet;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+form .field{
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.field input, .field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.field input{
+    padding: 0 15px;
+    border: 1px solid gray;
+}
+.eye-icon{
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: rgb(166, 166, 166);
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+    color: antiquewhite;
+    background-color: rgb(88, 145, 237);
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span, .form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+}
+.form a{
+    text-decoration: none;
+    color: rgb(49, 116, 250);
+}
+.form a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 360px){
+    .form_logIn{
+        background: white;
+        border-radius: 6px;
+        max-width: 300px;
+        width: 90%;
+        padding: 30px;
+    }
+}

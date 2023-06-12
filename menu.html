@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SOSHApp</title>
+</head>
+<body>
+    <div class="header2">
+        <nav>
+            <a><img src="images/logo.png"></a>
+            <div class="homepage" id="homePage">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" target="blank" class="active">Menu</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </div>
+<script>
+    var homePage = document.getElementById("homePage");
+    function showMenu(){
+        homePage.style.top = "0";
+    }
+    function hideMenu(){
+        homePage.style.top = "-1000px";
+    }
+</script> 
+    <div class="menu">
+        <h1>Menu</h1>
+        <h2 id="unli_rice_meal">Unli Rice Meal</h2>
+
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/rice.jpg" alt="">
+                </div>
+                <h3>Unli Rice</h3>
+                <span>Included Already</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Chicken Leg Quarter.jpg" alt="">
+                </div>    
+                <h3>Chicken Leg Quarter</h3>
+                <span>₱ 125.00</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Chicken wings.jpg" alt="">
+                </div>    
+                <h3>Chicken Wings</h3>
+                <span>₱ 95.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Chicken Fillet.jpg" alt="">
+                </div>    
+                <h3>Chicken Fillet</h3>
+                <span>₱ 95.00</span>
+            </div> 
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Sizzling sisig.jpg" alt="">
+                </div>    
+                <h3>Sizzling Sisig</h3>
+                <span>₱ 85.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Sizzling Bangus.jpg" alt="">
+                </div>    
+                <h3>Sizzling Bangus</h3>
+                <span>₱ 99.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Beef Tapa with egg.jpg" alt="">
+                </div>    
+                <h3>Beef Tapa with egg</h3>
+                <span>₱ 99.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Beef Burger Steak.jpg" alt="">
+                </div>    
+                <h3>Beef Burger Steak with egg</h3>
+                <span>₱ 99.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/T-bone with egg.jpg" alt="">
+                </div>    
+                <h3>T-bone with egg</h3>
+                <span>₱ 169.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Porkchop.jpg" alt="">
+                </div>    
+                <h3>Porkchop</h3>
+                <span>₱ 175.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Liempo.jpg" alt="">
+                </div>    
+                <h3>Liempo</h3>
+                <span>₱ 169.00</span>
+            </div>
+            
+        </div>
+        <h2 id="barkada_pulutan">Barkada / Pulutan (2 - 4 Person)</h2>
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Sizzling Pork Sisig.jpg" alt="">
+                </div>
+                <h3>Sizzling Pork Sisig</h3>
+                <span>₱ 260.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Sizzling chicken fillet.jpg" alt="">
+                </div>
+                <h3>Sizzling Chicken Fillet</h3>
+                <span>₱ 260.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Sizzling beef tapa.jpg" alt="">
+                </div>
+                <h3>Sizzling Beef Tapa</h3>
+                <span>₱ 240.00</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Sizzling liempo.jpg" alt="">
+                </div>
+                <h3>Sizzling Liempo</h3>
+                <span>₱ 330.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Sizzling porkchop.jpg" alt="">
+                </div>
+                <h3>Sizzling Porkchop</h3>
+                <span>₱ 110.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Chicken Wings Bark..jpg" alt="">
+                </div>
+                <h3>Chicken Wings</h3>
+                <span>₱ 255.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Beef Burger Steak.jpg" alt="">
+                </div>    
+                <h3>Beef Burger Steak with egg</h3>
+                <span>₱ 318.00</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/T-bone with egg.jpg" alt="">
+                </div>    
+                <h3>T-bone with egg</h3>
+                <span>₱ 318.00</span>
+            </div>
+        </div>
+        <h2 id="beverages">Drinks</h2>
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/mango_shake.jpg">
+                </div>    
+                <h3>Mango Shake</h3>
+                <span>₱ 65.00</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Iced-Lemon-Tea-3.jpg">
+                </div>    
+                <h3>Lemon Iced Tea</h3>
+                <span>₱ 65.00</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Red_Iced_Tea_4.jpg">
+                </div>    
+                <h3>Red Iced Tea</h3>
+                <span>₱ 65.00</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/images.jpg">
+                </div>    
+                <h3>Blue Lemonade</h3>
+                <span>₱ 65.00</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/mango_graham.jpg">
+                </div>    
+                <h3>Mango Graham Shake</h3>
+                <span>₱ 70.00</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Oreo-Milkshake-Recipe-4.jpg">
+                </div>    
+                <h3>Cookies and Cream</h3>
+                <span>₱ 65.00</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SOSHApp</title>
+</head>
+<body>
+    <div class="header2">
+        <nav>
+            <a><img src="images/logo.png"></a>
+            <div class="homepage" id="homePage">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html" target="blank" class="active">About</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+    </div>
+<script>
+    var homePage = document.getElementById("homePage");
+    function showMenu(){
+        homePage.style.top = "0";
+    }
+    function hideMenu(){
+        homePage.style.top = "-1000px";
+    }
+</script> 
+    <div class="map">
+        <h1>Who Are We</h1>
+        <p>The Sizzling Sisig House is a local business here in the Island of Marinduque. We are located at Zone 4 Brgy. Tabi, Boac, Marinduque. For further details, we are near Tanza-Tabi Bridge, or near Piano's Coco Lumber if you came from the crossing of Tabi.</p>
+    </div>
+    <div class="map">
+        <h1>Here's How You Can Reach Us</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1455.108164540591!2d121.838255!3d13.456309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a32787fbe605ff%3A0xa6e1829777b7cf8f!2sSlaughter&#39;s%20Sizzling%20House!5e1!3m2!1sen!2sph!4v1686153129621!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> 
+</body>
+</html>

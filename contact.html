@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SOSHApp</title>
+</head>
+<body>
+    <div class="header2">
+        <nav>
+            <a><img src="images/logo.png"></a>
+            <div class="homepage" id="homePage">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" target="blank" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </div>
+<script>
+    var homePage = document.getElementById("homePage");
+    function showMenu(){
+        homePage.style.top = "0";
+    }
+    function hideMenu(){
+        homePage.style.top = "-1000px";
+    }
+</script>    
+    <div class="contact">
+        <h1>Contact</h1>
+        <div class="contact-wrap">
+            <div class="contact-in">
+                <h1>Contact Info</h1>
+                <h2><i class="fa fa-mobile"></i>Mobile</h2>
+                    <p>09685246427</p>
+                <h2><i class="fa fa-map-marker"></i>Address</h2>
+                    <p>Zone 4 Brgy. Tabi, Boac, Marinduque</p>
+                <h2><i class="fa fa-facebook"></i>Facebook Page</h2>
+                    <p>Slaughter's Sizzling House</p>
+            </div>
+            <div class="contact-in">
+                <h1>Send a Message</h1>
+                <form class="contact-in-input">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email"> 
+                    <input type="text" placeholder="Mobile">
+                    <textarea id= "message"placeholder="Message" rows="5"></textarea>
+                    <button type="submit" value="Submit" class="buttonforcontact"><a>Send</a></button> 
+                </form>
+            </div>    
+        </div>     
+    </div>
+    <div class="fororder">
+        <h1>Order Now</h1>
+    </div>
+    <div class="orderform">
+        <h1 id="orders">Ordering Form</h1>
+        <form action="contact.html" method="POST" class="form_order">
+            <p>Customer's Information</p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required ><br><br>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age" required ><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required ><br><br>
+            <label for="number">Contact No.:</label>
+            <input type="text" id="number" name="number" placeholder="Enter your number" required ><br><br>
+
+
+            <label for="order">What would you like to order?</label><br>
+            <textarea id="order" rows="5" name="order" placeholder="Place your orders here" required ></textarea><br><br>
+            
+            <label for="payment">How would you like to pay?</label><br>
+            <label for="myRadioId" class="radio">
+                <input type="radio" name="myRadioField" id="myRadioId" class="radio__input">
+                <div class="radio__radio">COD</div>
+                <input type="radio" name="myRadioField" id="myRadioId" class="radio__input">
+                <div class="radio__radio">GCash</div>
+                <input type="radio" name="myRadioField" id="myRadioId" class="radio__input">
+                <div class="radio__radio">PayMaya</div>
+            </label>
+
+            <p><br>If you picked GCash or PayMaya as a mode of your payment, you can send it to this number, 09685246427.<br></p><br>
+            <button type="submit" value="Submit" class="buttonfororder"><a>Place Order</a></button> 
+
+
+
+
+
+
+
+
+            
+        </form>
+    </div>  
+</body>
+</html>
